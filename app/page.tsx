@@ -12,9 +12,9 @@ export default function Home() {
               fill={true}
               className="object-cover"
             />
-            <div className="absolute w-full h-full bg-black opacity-35 group-hover:opacity-0 transition-all duration-500 ease-in-out"></div>
-            <div className="absolute bottom-0 w-full h-10 lg:h-[65px] bg-gradient-to-r from-transparent to-[#001427] flex justify-end items-center pr-20 lg:pr-48 border-b border-[#AF9953]">
-              <h2 className=" text-[#AF9953] group-hover:underline text-base lg:text-2xl">
+            <div className="absolute w-full h-full bg-white opacity-0 group-hover:opacity-15 transition-all duration-500 ease-in-out"></div>
+            <div className="absolute bottom-0 w-full h-8 lg:h-[45px] bg-[#001427] flex justify-end items-center pr-20 lg:pr-48 border-b border-[#AF9953]">
+              <h2 className=" text-[#AF9953] group-hover:underline text-sm lg:text-xl">
                 VINAŘSTVÍ
               </h2>
             </div>
@@ -28,9 +28,9 @@ export default function Home() {
               fill={true}
               className="object-cover"
             />
-            <div className="absolute w-full h-full bg-black opacity-35 group-hover:opacity-0 transition-all duration-500 ease-in-out"></div>
-            <div className="absolute bottom-0 w-full h-10 lg:h-[65px] bg-gradient-to-l from-transparent to-[#001427] flex justify-start items-center pl-20 lg:pl-48 border-b border-[#AF9953]">
-              <h2 className=" text-[#AF9953] group-hover:underline text-base lg:text-2xl">
+            <div className="absolute w-full h-full bg-white opacity-0 group-hover:opacity-15 transition-all duration-500 ease-in-out"></div>
+            <div className="absolute bottom-0 w-full h-8 lg:h-[45px] bg-[#001427] flex justify-start items-center pl-20 lg:pl-48 border-b border-[#AF9953]">
+              <h2 className=" text-[#AF9953] group-hover:underline text-sm lg:text-xl">
                 RESTAURACE
               </h2>
             </div>
@@ -44,9 +44,9 @@ export default function Home() {
               fill={true}
               className="object-cover"
             />
-            <div className="absolute w-full h-full bg-black opacity-35 group-hover:opacity-0 transition-all duration-500 ease-in-out"></div>
-            <div className="absolute top-0 w-full h-10 lg:h-[65px] bg-gradient-to-r from-transparent to-[#001427] flex justify-end items-center pr-20 lg:pr-48">
-              <h2 className=" text-[#AF9953] group-hover:underline text-base lg:text-2xl">
+            <div className="absolute w-full h-full bg-white opacity-0 group-hover:opacity-15 transition-all duration-500 ease-in-out"></div>
+            <div className="absolute top-0 w-full h-8 lg:h-[45px] bg-[#001427] flex justify-end items-center pr-20 lg:pr-48">
+              <h2 className=" text-[#AF9953] group-hover:underline text-sm lg:text-xl">
                 UBYTOVÁNÍ
               </h2>
             </div>
@@ -60,16 +60,16 @@ export default function Home() {
               fill={true}
               className="object-cover"
             />
-            <div className="absolute w-full h-full bg-black opacity-35 group-hover:opacity-0 transition-all duration-500 ease-in-out"></div>
-            <div className="absolute top-0 w-full h-10 lg:h-[65px] bg-gradient-to-l from-transparent to-[#001427] flex justify-start items-center pl-20 lg:pl-48">
-              <h2 className=" text-[#AF9953] group-hover:underline text-base lg:text-2xl">
+            <div className="absolute w-full h-full bg-white opacity-0 group-hover:opacity-15 transition-all duration-500 ease-in-out"></div>
+            <div className="absolute top-0 w-full h-8 lg:h-[45px] bg-[#001427] flex justify-start items-center pl-20 lg:pl-48">
+              <h2 className=" text-[#AF9953] group-hover:underline text-sm lg:text-xl">
                 VINOTÉKA
               </h2>
             </div>
           </a>
         </div>
         <a
-          className="absolute block top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[150px] h-[150px] sm:w-[260px] sm:h-[260px] md:w-[300px] md:h-[300px] lg:w-[360px] lg:h-[360px] bg-[#001427] hover:bg-[#fff4dc] rounded-full transition-all duration-500 ease-in-out"
+          className="absolute block top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[150px] h-[150px] sm:w-[260px] sm:h-[260px] md:w-[300px] md:h-[300px] lg:w-[360px] lg:h-[360px] bg-[#001427] border border-[#AF9953] rounded-full transition-all duration-500 ease-in-out"
           href="/kontakty"
         >
           <Image
