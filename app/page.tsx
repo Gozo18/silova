@@ -1,85 +1,87 @@
-import Image from "next/image";
+import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <div className="flex justify-center items-center w-screen h-screen">
+      <main className="relative flex flex-wrap max-w-[1920px] max-h-[1080px] w-full h-full">
+        <div className="relative w-1/2 h-1/2 custom-transform">
+          <a className="relative block w-full h-full group" href="/vinarstvi">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/vinarstvi.png"
+              alt="Víno Šílová"
+              fill={true}
+              className="object-cover"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            <div className="absolute w-full h-full bg-black opacity-35 group-hover:opacity-0 transition-all duration-500 ease-in-out"></div>
+            <div className="absolute bottom-0 w-full h-10 lg:h-[65px] bg-gradient-to-r from-transparent to-[#001427] flex justify-end items-center pr-20 lg:pr-48 border-b border-[#AF9953]">
+              <h2 className=" text-[#AF9953] group-hover:underline text-base lg:text-2xl">
+                VINAŘSTVÍ
+              </h2>
+            </div>
           </a>
         </div>
+        <div className="w-1/2 h-1/2">
+          <a className="relative block w-full h-full group" href="/vinarstvi">
+            <Image
+              src="/restaurace.png"
+              alt="Víno Šílová"
+              fill={true}
+              className="object-cover"
+            />
+            <div className="absolute w-full h-full bg-black opacity-35 group-hover:opacity-0 transition-all duration-500 ease-in-out"></div>
+            <div className="absolute bottom-0 w-full h-10 lg:h-[65px] bg-gradient-to-l from-transparent to-[#001427] flex justify-start items-center pl-20 lg:pl-48 border-b border-[#AF9953]">
+              <h2 className=" text-[#AF9953] group-hover:underline text-base lg:text-2xl">
+                RESTAURACE
+              </h2>
+            </div>
+          </a>
+        </div>
+        <div className="w-1/2 h-1/2">
+          <a className="relative block w-full h-full group" href="/vinarstvi">
+            <Image
+              src="/ubytovani.png"
+              alt="Víno Šílová"
+              fill={true}
+              className="object-cover"
+            />
+            <div className="absolute w-full h-full bg-black opacity-35 group-hover:opacity-0 transition-all duration-500 ease-in-out"></div>
+            <div className="absolute top-0 w-full h-10 lg:h-[65px] bg-gradient-to-r from-transparent to-[#001427] flex justify-end items-center pr-20 lg:pr-48">
+              <h2 className=" text-[#AF9953] group-hover:underline text-base lg:text-2xl">
+                UBYTOVÁNÍ
+              </h2>
+            </div>
+          </a>
+        </div>
+        <div className="w-1/2 h-1/2">
+          <a className="relative block w-full h-full group" href="/vinarstvi">
+            <Image
+              src="/vinoteka.png"
+              alt="Víno Šílová"
+              fill={true}
+              className="object-cover"
+            />
+            <div className="absolute w-full h-full bg-black opacity-35 group-hover:opacity-0 transition-all duration-500 ease-in-out"></div>
+            <div className="absolute top-0 w-full h-10 lg:h-[65px] bg-gradient-to-l from-transparent to-[#001427] flex justify-start items-center pl-20 lg:pl-48">
+              <h2 className=" text-[#AF9953] group-hover:underline text-base lg:text-2xl">
+                VINOTÉKA
+              </h2>
+            </div>
+          </a>
+        </div>
+        <a
+          className="absolute block top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[150px] h-[150px] sm:w-[260px] sm:h-[260px] md:w-[300px] md:h-[300px] lg:w-[360px] lg:h-[360px] bg-[#001427] hover:bg-[#fff4dc] rounded-full transition-all duration-500 ease-in-out"
+          href="/kontakty"
+        >
+          <Image
+            src="/logo.png"
+            alt="Víno Šílová"
+            fill={true}
+            className="object-contain p-6 sm:p-10 md:p-16 lg:p-20"
+          />
+        </a>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
+
+      {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
@@ -95,7 +97,7 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
-      </footer>
+      </footer> */}
     </div>
-  );
+  )
 }
